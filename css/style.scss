@@ -10,12 +10,12 @@ body{
 }
 
 h3{
-  font-family: Dosis;
+  font-family: Dosis, sans-serif;
   margin: 5px 10px;
 }
 
 p{
-  font-family: Dosis;
+  font-family: Dosis, sans-serif;
   margin: 5px 10px;
 }
 
@@ -103,7 +103,7 @@ li a {
 footer{
   background-color: #F0F0F0;
   border-top: 5px solid #4A708B;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .footerMobil{
@@ -126,7 +126,10 @@ footer{
   justify-content: center;
   margin-top: 10px;
 }
-
+.search {
+  display: flex;
+  justify-content: space-around;
+}
 /*Søg & Find*/
 input{
   margin: 5px;
@@ -297,9 +300,15 @@ select{
       grid-template-columns: 33% 33% 33%;
       grid-template-areas:
               "header header header"
+              "search search search"
               "rasmus capark firework"
               "whiskey krok lilholt"
               "footer footer footer";
+      .search {
+        grid-area: search;
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
