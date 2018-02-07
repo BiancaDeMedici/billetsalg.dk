@@ -132,14 +132,14 @@ input{
   margin: 5px;
   border: 1px solid black;
   width: 50%;
-  font-family: Dosis;
+  font-family: Dosis, sans-serif;
 }
 
 select{
   margin: 5px;
   border: 1px solid black;
   width: 50%;
-  font-family: Dosis;
+  font-family: Dosis, sans-serif;
 }
 
 /*Min Profil siden*/
@@ -152,7 +152,7 @@ select{
 }
 
 .lignende{
-  font-family: Dosis;
+  font-family: Dosis, sans-serif;
   margin: 5px 10px;
   float: right;
   color: #4A708B;
@@ -163,7 +163,7 @@ select{
 }
 
 .profilMenu{
-  font-family: Dosis;
+  font-family: Dosis, sans-serif;
   margin: 5px 10px;
   line-height: 50px;
   color: black;
@@ -171,7 +171,9 @@ select{
   text-shadow: 1px 1px 1px #4A708B;
 }
 
-
+.ticket {
+  margin-top: 10px;
+}
 
 /*Media Query Desktop*/
 @supports (grid-area: auto) {
@@ -262,26 +264,42 @@ select{
               "Menu Min Min ."
               "footer footer footer footer";
 
-      .profil{
+      .profil {
         margin-bottom: 1%;
       }
 
-      .billet{
+      .billet {
         width: 60%;
       }
 
-      .mineBilletter{
+      .mineBilletter {
         grid-area: Min;
         text-align: center;
         margin-top: 20px;
       }
 
-      .profilWrapper{
+      .profilWrapper {
         grid-area: Menu;
         position: absolute;
         top: 40%
       }
 
+
+       }
+      }
+    }
+
+/*Media Query Desktop*/
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    #tickets {
+      display:grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-areas:
+              "header header header"
+              "rasmus capark firework"
+              "whiskey krok lilholt"
+              "footer footer footer";
     }
   }
 }

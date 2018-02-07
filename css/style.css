@@ -104,18 +104,18 @@ footer {
   justify-content: center;
   margin-top: 10px; }
 
-/*S├©g & Find*/
+/*Søg & Find*/
 input {
   margin: 5px;
   border: 1px solid black;
   width: 50%;
-  font-family: Dosis; }
+  font-family: Dosis, sans-serif; }
 
 select {
   margin: 5px;
   border: 1px solid black;
   width: 50%;
-  font-family: Dosis; }
+  font-family: Dosis, sans-serif; }
 
 /*Min Profil siden*/
 .billet {
@@ -126,7 +126,7 @@ select {
   margin-top: 20px; }
 
 .lignende {
-  font-family: Dosis;
+  font-family: Dosis, sans-serif;
   margin: 5px 10px;
   float: right;
   color: #4A708B; }
@@ -135,12 +135,15 @@ select {
   margin-top: 40px; }
 
 .profilMenu {
-  font-family: Dosis;
+  font-family: Dosis, sans-serif;
   margin: 5px 10px;
   line-height: 50px;
   color: black;
   text-decoration: none;
   text-shadow: 1px 1px 1px #4A708B; }
+
+.ticket {
+  margin-top: 10px; }
 
 /*Media Query Desktop*/
 @supports (grid-area: auto) {
@@ -216,5 +219,12 @@ select {
         grid-area: Menu;
         position: absolute;
         top: 40%; } } }
+/*Media Query Desktop*/
+@supports (grid-area: auto) {
+  @media screen and (min-width: 600px) {
+    #tickets {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-areas: "header header header" "rasmus capark firework" "whiskey krok lilholt" "footer footer footer"; } } }
 
 /*# sourceMappingURL=style.css.map */
